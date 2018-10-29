@@ -77,3 +77,5 @@ HashTable.prototype.lookup = function(key){
     }
   }
 }
+
+module.exports = HashTable;
