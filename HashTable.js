@@ -56,7 +56,7 @@ HashTable.prototype.remove = function (key) {
   }else{
     for(let i = 0; i < bucket[index].length; i++){
       if(bucket[index][i][0] === key){
-        delete bucket[index][i];
+        bucket[index].splice(i, 1);
       }
     }
   }
